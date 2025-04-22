@@ -1,0 +1,131 @@
+4月 22, 2025 3:25:55 下午 generated.smartcity.airquality.AirQualityServiceImpl getCurrentAirStatus
+INFO: Air quality request received from city: Dublin, District: default
+4月 22, 2025 3:25:55 下午 generated.smartcity.airquality.AirQualityServiceImpl getCurrentAirStatus
+INFO: Returning air status: timestamp: "2025-04-22T15:25:55.166628"
+temperature: 25.0
+humidity: 55.0
+pm25: 30.0
+co2: 450.0
+status: "Good"
+
+4月 22, 2025 3:26:04 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Starting air quality streaming from City: Cork, District: stream-test
+4月 22, 2025 3:26:04 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:04.699748"
+temperature: 22.0
+humidity: 50.0
+pm25: 25.0
+co2: 400.0
+status: "Moderate"
+
+4月 22, 2025 3:26:05 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:05.707227"
+temperature: 23.0
+humidity: 51.0
+pm25: 26.0
+co2: 405.0
+status: "Moderate"
+
+4月 22, 2025 3:26:06 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:06.720227"
+temperature: 24.0
+humidity: 52.0
+pm25: 27.0
+co2: 410.0
+status: "Moderate"
+
+4月 22, 2025 3:26:07 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:07.730093"
+temperature: 25.0
+humidity: 53.0
+pm25: 28.0
+co2: 415.0
+status: "Moderate"
+
+4月 22, 2025 3:26:08 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:08.736206"
+temperature: 26.0
+humidity: 54.0
+pm25: 29.0
+co2: 420.0
+status: "Moderate"
+
+4月 22, 2025 3:26:09 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Air quality streaming completed.
+4月 22, 2025 3:26:09 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Starting air quality streaming from City: Cork, District: stream-test
+4月 22, 2025 3:26:09 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:09.760647"
+temperature: 22.0
+humidity: 50.0
+pm25: 25.0
+co2: 400.0
+status: "Moderate"
+
+4月 22, 2025 3:26:10 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:10.767289"
+temperature: 23.0
+humidity: 51.0
+pm25: 26.0
+co2: 405.0
+status: "Moderate"
+
+4月 22, 2025 3:26:11 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:11.773285"
+temperature: 24.0
+humidity: 52.0
+pm25: 27.0
+co2: 410.0
+status: "Moderate"
+
+4月 22, 2025 3:26:12 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:12.781060"
+temperature: 25.0
+humidity: 53.0
+pm25: 28.0
+co2: 415.0
+status: "Moderate"
+
+4月 22, 2025 3:26:13 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Pushed update: timestamp: "2025-04-22T15:26:13.790022"
+temperature: 26.0
+humidity: 54.0
+pm25: 29.0
+co2: 420.0
+status: "Moderate"
+
+4月 22, 2025 3:26:14 下午 generated.smartcity.airquality.AirQualityServiceImpl streamAirQuality
+INFO: Air quality streaming completed.
+4月 22, 2025 3:26:41 下午 generated.smartcity.airquality.AirQualityServiceImpl$1 onNext
+INFO: Received SensorReading: pm25: 33.0
+co2: 33.0
+api_key: "zihao"
+
+4月 22, 2025 3:26:41 下午 generated.smartcity.airquality.AirQualityServiceImpl$1 onNext
+INFO: Received SensorReading: pm25: 44.0
+co2: 44.0
+api_key: "zihao"
+
+4月 22, 2025 3:26:41 下午 generated.smartcity.airquality.AirQualityServiceImpl$1 onCompleted
+INFO: Upload complete. Summary: total_readings: 2
+avg_pm25: 38.5
+avg_co2: 38.5
+quality_summary: "Summary generated"
+
+4月 22, 2025 3:26:58 下午 generated.smartcity.airquality.AirQualityServiceImpl$2 onNext
+INFO: Live monitoring: received reading: temperature: 23.0
+humidity: 33.0
+pm25: 33.0
+co2: 33.0
+api_key: "zihao"
+
+4月 22, 2025 3:26:58 下午 generated.smartcity.airquality.AirQualityServiceImpl$2 onNext
+INFO: Returning live AirStatus: timestamp: "2025-04-22T15:26:58.269872"
+temperature: 23.0
+humidity: 33.0
+pm25: 33.0
+co2: 33.0
+status: "Live Monitored"
+
+4月 22, 2025 3:28:53 下午 generated.smartcity.airquality.AirQualityServiceImpl$2 onError
+SEVERE: Live monitoring error: CANCELLED: client cancelled

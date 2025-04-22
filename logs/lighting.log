@@ -1,0 +1,22 @@
+4月 22, 2025 3:22:35 下午 generated.smartcity.lighting.SmartLightingServiceImpl turnOnLight
+INFO: Received TurnOnLight request: Light ID =: 01, Location = Dublin01
+4月 22, 2025 3:22:44 下午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+INFO: Streaming light statuses for area: D01
+4月 22, 2025 3:23:24 下午 generated.smartcity.lighting.SmartLightingServiceImpl$1 onNext
+INFO: Brightness adjustment received: Light ID = 02, Brightness = 4
+4月 22, 2025 3:23:24 下午 generated.smartcity.lighting.SmartLightingServiceImpl$1 onNext
+INFO: Brightness adjustment received: Light ID = 03, Brightness = 5
+4月 22, 2025 3:23:24 下午 generated.smartcity.lighting.SmartLightingServiceImpl$1 onCompleted
+INFO: Brightness adjustment completed. Count: 2 , Average 4.5
+4月 22, 2025 3:23:54 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onNext
+INFO: Live command received: Light ID = 03, Command Hello
+4月 22, 2025 3:24:04 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onNext
+INFO: Live command received: Light ID = 03, Command 01
+4月 22, 2025 3:24:19 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onNext
+INFO: Live command received: Light ID = 03, Command open
+4月 22, 2025 3:25:15 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onNext
+INFO: Live command received: Light ID = 03, Command On
+4月 22, 2025 3:25:23 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onNext
+INFO: Live command received: Light ID = 03, Command Off
+4月 22, 2025 3:28:53 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onError
+SEVERE: Error in live lighting control: CANCELLED: client cancelled

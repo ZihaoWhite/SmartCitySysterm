@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "generated.smartcity.lighting";
+option java_outer_classname = "SmartLightingProto";
+
+package smartlighting;
+
+service SmartLightingService {
+  rpc TurnOnLight (LightRequest) returns (LightResponse); // Unary 
+  rpc StreamLightStatus (StatusRequest) returns (stream LightStatus); // Server Streaming
+  rpc AdjustBrightness (stream BrightnessLevel) returns (AdjustmentSummary); // Client Streaming
+  rpc LiveLightingControl (stream LightingCommand) returns (stream LightingFeedback); // Bidirectional
+}
+
+// Unary Request: Turn on a specific light
+message LightRequest {
+  string light_id = 1;
+  string location = 2;
+  string api_key = 3; // API
+}
+
+message LightResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Server Streaming request
+message StatusRequest {
+  string area_id = 1;
+  string api_key = 2; 
+}
+
+message LightStatus {
+  string light_id = 1;
+  bool is_on = 2;
+  int32 brightness = 3;
+  string status_message = 4;
+}
+
+// Client Streaming
+message BrightnessLevel {
+  string light_id = 1;
+  int32 brightness = 2;
+  string api_key = 3; 
+}
+
+message AdjustmentSummary {
+  int32 adjusted_count = 1;
+  float average_brightness = 2;
+}
+
+// Bidirectional Streaming
+message LightingCommand {
+  string light_id = 1;
+  string command = 2; // ON, OFF, DIM
+  string api_key = 3; 
+}
+
+message LightingFeedback {
+  string light_id = 1;
+  bool accepted = 2;
+  string current_state = 3;
+}

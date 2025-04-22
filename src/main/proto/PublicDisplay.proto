@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "generated.smartcity.publicdisplay";
+option java_outer_classname = "PublicDisplayProto";
+
+package publicdisplay;
+
+service PublicDisplayService {
+  rpc SendMessage (DisplayMessage) returns (DisplayAck); // Unary
+  rpc StreamMessages (stream DisplayMessage) returns (DisplaySummary); // Client Streaming
+  rpc RealTimeDisplay (stream DisplayMessage) returns (stream DisplayStatus); // Bidirectional
+}
+
+// display content
+message DisplayMessage {
+  string message_id = 1;
+  string screen_id = 2;
+  string content = 3;
+  string priority = 4; // normal, high, emergency
+  string api_key = 5;      // API 
+}
+
+// single message
+message DisplayAck {
+  bool success = 1;
+  string confirmation = 2;
+}
+
+// Client Streaming 
+message DisplaySummary {
+  int32 total_messages = 1;
+  int32 successful_displays = 2;
+  string summary_note = 3;
+}
+
+// Bidirectional 
+message DisplayStatus {
+  string message_id = 1;
+  string screen_id = 2;
+  bool is_displayed = 3;
+  string status_note = 4;
+}

@@ -1,0 +1,12 @@
+4月 22, 2025 3:27:33 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl sendMessage
+INFO:  Message request received -- Screen: 01, Content: Hello world, Priority: high
+4月 22, 2025 3:28:11 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl$1 onNext
+INFO: Batch message received-- ID: msg-1745332079640, Screen: 02, Content: Be careful
+4月 22, 2025 3:28:11 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl$1 onNext
+INFO: Batch message received-- ID: msg-1745332090816, Screen: 01, Content: hello
+4月 22, 2025 3:28:11 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl$1 onCompleted
+INFO: Total Batch display summary: 2，Success: 2
+4月 22, 2025 3:28:40 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl$2 onNext
+INFO: Real-time display = This road is closed @ Screen 03
+4月 22, 2025 3:28:53 下午 generated.smartcity.publicdisplay.PublicDisplayServiceImpl$2 onError
+SEVERE: Real-time display error: CANCELLED: client cancelled

@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "generated.smartcity.airquality";
+option java_outer_classname = "AirQualityProto";
+
+package airquality;
+
+// service definition of gRPC
+service AirQualityService {
+  // Unary RPC：get the current air quality
+  rpc GetCurrentAirStatus (LocationRequest) returns (AirStatus);
+
+  // Server Streaming:continuously stream air quality data
+  rpc StreamAirQuality (LocationRequest) returns (stream AirStatus);
+
+  // Client Streaming：upload multple sensor readings 
+  rpc UploadSensorData (stream SensorReading) returns (SensorReport);
+
+  // Bidirectional Streaming：live monitor
+  rpc LiveMonitoring (stream SensorReading) returns (stream AirStatus);
+}
+
+// request format 
+message LocationRequest {
+  string city = 1;
+  string district = 2;
+  string api_key = 3; // API Key
+}
+
+// response format
+message AirStatus {
+  string timestamp = 1;
+  float temperature = 2;
+  float humidity = 3;
+  float pm25 = 4;
+  float co2 = 5;
+  string status = 6;
+}
+
+// sensor reading 
+message SensorReading {
+  float temperature = 1;
+  float humidity = 2;
+  float pm25 = 3;
+  float co2 = 4;
+  string api_key = 5; // API Key
+}
+
+// summary report returned after upload
+message SensorReport {
+  int32 total_readings = 1;
+  float avg_pm25 = 2;
+  float avg_co2 = 3;
+  string quality_summary = 4;
+}
