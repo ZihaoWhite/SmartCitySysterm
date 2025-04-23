@@ -26,7 +26,7 @@ public class SmartLightingServiceImpl extends SmartLightingServiceGrpc.SmartLigh
 
     static {
         try {
-            FileHandler fh = new FileHandler("logs/lighting.log", true); // 追加日志
+            FileHandler fh = new FileHandler("logs/lighting.log", true); 
             fh.setFormatter(new SimpleFormatter());
             logger.addHandler(fh);
             logger.setUseParentHandlers(false);

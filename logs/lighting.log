@@ -20,3 +20,25 @@ INFO: Live command received: Light ID = 03, Command On
 INFO: Live command received: Light ID = 03, Command Off
 4月 22, 2025 3:28:53 下午 generated.smartcity.lighting.SmartLightingServiceImpl$2 onError
 SEVERE: Error in live lighting control: CANCELLED: client cancelled
+4月 23, 2025 3:23:32 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+INFO: Streaming light statuses for area: 01
+4月 23, 2025 7:20:35 上午 generated.smartcity.lighting.SmartLightingServiceImpl turnOnLight
+INFO: Received TurnOnLight request: Light ID =: 01, Location = Dublin
+4月 23, 2025 7:20:37 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+INFO: Streaming light statuses for area: 01
+4月 23, 2025 8:10:00 上午 generated.smartcity.lighting.SmartLightingServiceImpl turnOnLight
+WARNING: Unauthorized turn-on request: Invalid API key
+4月 23, 2025 8:10:16 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+WARNING: Unauthorized status request: Invalid API key.
+4月 23, 2025 8:10:37 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+WARNING: Unauthorized status request: Invalid API key.
+4月 23, 2025 8:10:53 上午 generated.smartcity.lighting.SmartLightingServiceImpl$1 onNext
+WARNING: Brightness adjustment rejected: Invalid API key.
+4月 23, 2025 8:10:53 上午 generated.smartcity.lighting.SmartLightingServiceImpl$1 onCompleted
+INFO: Brightness adjustment completed. Count: 0 , Average 0.0
+4月 23, 2025 8:13:41 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+WARNING: Unauthorized status request: Invalid API key.
+4月 23, 2025 8:13:59 上午 generated.smartcity.lighting.SmartLightingServiceImpl turnOnLight
+INFO: Received TurnOnLight request: Light ID =: 01, Location = Dublin
+4月 23, 2025 8:14:00 上午 generated.smartcity.lighting.SmartLightingServiceImpl streamLightStatus
+INFO: Streaming light statuses for area: 1
